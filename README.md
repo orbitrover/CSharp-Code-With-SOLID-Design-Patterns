@@ -21,7 +21,7 @@ Repository Pattern: For data access abstraction.
 Dependency Injection: For managing dependencies between classes.
 
 # Example: E-Commerce System
-
+```csharp
             using System;
             using System.Collections.Generic;
             
@@ -225,7 +225,7 @@ Dependency Injection: For managing dependencies between classes.
                 }
             }
 
-   
+``` 
 # Explanation:
 Single Responsibility Principle (SRP): Each class has a single responsibility, like Product, Order, Customer, etc.
 
