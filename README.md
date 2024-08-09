@@ -7,7 +7,7 @@ C# code example that fully adheres to the SOLID principles and incorporates mult
 4. Interface Segregation Principle (ISP): Clients should not be forced to depend on interfaces they do not use.
 5. Dependency Inversion Principle (DIP): High-level modules should not depend on low-level modules but on abstractions.
 
-Design Patterns Used:
+# Design Patterns Used:
 Factory Pattern: For creating product instances.
 
 Strategy Pattern: For applying different discount strategies.
@@ -20,7 +20,7 @@ Repository Pattern: For data access abstraction.
 
 Dependency Injection: For managing dependencies between classes.
 
-Example: E-Commerce System
+# Example: E-Commerce System
 
             using System;
             using System.Collections.Generic;
@@ -226,18 +226,27 @@ Example: E-Commerce System
             }
 
    
-Explanation:
+# Explanation:
 Single Responsibility Principle (SRP): Each class has a single responsibility, like Product, Order, Customer, etc.
+
 Open/Closed Principle (OCP): New product types, discounts, or observers can be added without modifying existing classes.
+
 Liskov Substitution Principle (LSP): Derived classes like GiftWrapDecorator can be used wherever the base Product class is expected.
+
 Interface Segregation Principle (ISP): Interfaces like IDiscountStrategy, IOrderObserver, and IProductRepository ensure that classes depend only on the methods they need.
+
 Dependency Inversion Principle (DIP): High-level modules like OrderService depend on abstractions (IDiscountStrategy, IProductRepository), not on concrete implementations.
 
 
-Design Patterns:
+# Design Patterns:
 Factory Pattern: Used to create product instances with optional gift wrapping.
+
 Decorator Pattern: Adds functionalities (e.g., gift wrapping) to products dynamically.
+
 Strategy Pattern: Allows switching between different discount strategies.
+
 Observer Pattern: Notifies customers of order status changes.
+
 Repository Pattern: Abstracts data access for products.
+
 Dependency Injection: Injects dependencies like IDiscountStrategy and IProductRepository into OrderService.
